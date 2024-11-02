@@ -24,11 +24,10 @@ function getAllBookings() {
 function addNewBooking(book) {
   latestBookingId++;
   bookings.set(
-    bookingId,
+    latestBookingId,
     Object.assign(book, {
       success: true,
       upcoming: true,
-      passenger: "Clinton",
       bookingId: latestBookingId,
     })
   );

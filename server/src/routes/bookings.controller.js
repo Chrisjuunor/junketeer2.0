@@ -21,7 +21,7 @@ function httpAddNewBooking(req, res) {
   }
 
   addNewBooking(book);
-  return res.status(201).json(launch);
+  return res.status(201).json(book);
 }
 
 module.exports = {
