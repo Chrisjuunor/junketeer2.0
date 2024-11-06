@@ -1,4 +1,9 @@
-const { getAllBookings, addNewBooking } = require("../models/bookings.model");
+const {
+  getAllBookings,
+  addNewBooking,
+  bookingExistsWithId,
+  cancelBookingById,
+} = require("../models/bookings.model");
 
 function httpGetAllBookings(req, res) {
   return res.status(200).json(getAllBookings());
@@ -24,7 +29,22 @@ function httpAddNewBooking(req, res) {
   return res.status(201).json(book);
 }
 
+function httpCancelBookingById(req, res) {
+  const bookingId = +req.params.id;
+
+  //check for the booking
+  if (!bookingExistsWithId(bookingId)) {
+    return res.status(404).json({
+      error: "Booking not found!",
+    });
+  }
+
+  const cancelled = cancelBookingById(bookingId);
+  return res.status(200).json(cancelled);
+}
+
 module.exports = {
   httpGetAllBookings,
   httpAddNewBooking,
+  httpCancelBookingById,
 };

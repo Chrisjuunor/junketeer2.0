@@ -15,6 +15,11 @@ const book = {
 //mapping by booking Id
 bookings.set(book.bookingId, book);
 
+//check if a booking exists
+function bookingExistsWithId(bookingId) {
+  return bookings.has(bookingId);
+}
+
 //retrieve all bookings from array of bookings
 function getAllBookings() {
   return Array.from(bookings.values());
@@ -33,7 +38,16 @@ function addNewBooking(book) {
   );
 }
 
+function cancelBookingById(bookingId) {
+  const cancelled = bookings.get(bookingId);
+  cancelled.upcoming = false;
+  cancelled.success = false;
+  return cancelled;
+}
+
 module.exports = {
+  bookingExistsWithId,
   getAllBookings,
   addNewBooking,
+  cancelBookingById,
 };
