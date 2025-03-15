@@ -101,6 +101,6 @@ Please, do feel free if you feel the need to add to this project to do so. I'd a
 
 ## Contact
 
-Please reach out at: `chinonsoigweic@gmail.com` if you have any queries.
+Please reach out at chinonsoigweic@gmail.com if you have any queries.
 
 _Happy coding..._
