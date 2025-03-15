@@ -82,12 +82,12 @@ For better results, I strongly suggest you use an API tester like Postman or ins
   This endpoint takes a parameter in the request; the `:id` indicates that your are trying to cancel a booking by its id.
   Before hitting send for this one, replace `:id` with the id of the particular booking you're trying to cancel.
 
-The expected result is a json object that looks like it holds everything it did after hitting send on the post request, but if you observe closely, you'll notice that the success status shows false and the upcoming status shows false. Like so;
+  The expected result is a json object that looks like it holds everything it did after hitting send on the post request, but if you observe closely, you'll notice that the success status shows false and the upcoming status shows false. Like so;
 
-```bash
-"success": false,
-"upcoming": false,
-```
+  ```bash
+  "success": false,
+  "upcoming": false,
+  ```
 
 ## Contributing
 
