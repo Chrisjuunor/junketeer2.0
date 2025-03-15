@@ -1,9 +1,9 @@
 # Junketeer (2.0)
 
-This is Junketeer (2.0), a booking system for land transit. Why (2.0) you may ask, well Junketeer was initially a class project and so many groups submitted their various versions of what they thought Junketeer was supposed to be, mine included. It was a fun project and there was a whole process involved to get whatever results we all eventually submitted.
+This is Junketeer (2.0), a booking system for land transit. Why (2.0), you may ask? Well, Junketeer was initially a class project, and so many groups submitted their various versions of what they thought Junketeer was supposed to be, mine included. It was a fun project, and there was a whole process involved to get whatever results we all eventually submitted.
 
-My group flunked. ouch! but the lessons we learned were immense and i have carried them with me ever since. And now, even when the project is long behind me i have decided to attempt to build it again, better this time, with the lessons I took from the time my team flunked the project.
-It is a work in progress and is therefore open to all forms of scrutiy and judgement, I welcome them all. Anyway, this is my little explanation of what this is and what it does.
+My group flunked—ouch! But the lessons we learned were immense, and I have carried them with me ever since. And now, even when the project is long behind me, I have decided to attempt to build it again, better this time, with the lessons I learned from the time my team flunked the project.
+It is a work in progress and is therefore open to all forms of scrutiny and judgement, I welcome them all. Anyway, this is my little explanation of what this is and what it does.
 
 ## Content:
 
@@ -20,13 +20,13 @@ It is a work in progress and is therefore open to all forms of scrutiy and judge
 
 So, as already established, Junketeer is a booking system for transit on land (don't mind the grammar, it's a mass transit type organisation) but how was it built?
 
-This project was built using node.js and express. It's very low effort and doesn't really incorporate any database. All data used are stored as json thereby reducing the number of dependencies required.
+This project was built using node.js and express. It's very low effort and doesn't really incorporate any database. All data used are stored as json, thereby reducing the number of dependencies required.
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-    [git clone https://github.com](https://github.com/Chrisjuunor/junketeer2.0.git)
+    git clone https://github.com/Chrisjuunor/junketeer2.0.git
    ```
 2. Install dependencies:
    ```bash
@@ -35,16 +35,16 @@ This project was built using node.js and express. It's very low effort and doesn
 
 ## Usage
 
-To run this projects server, make sure you are in the server directory. If you aren't, run the following command in the terminal:
+To run this project's server, make sure you are in the server directory. If you aren't, run the following command in the terminal:
 `cd server`
-This command will take to into the server directory where you can now run the project properly.
+This command will take you into the server directory where you can now run the project properly.
 After which you run `npm start` to start the server or `npm run watch` to run the server in watch mode.
 
-What can you do after running the server you may ask. Well you may explore some of the project endpoints.
+What can you do after running the server you may ask. Well, you may explore some of the project endpoints.
 
 ### Endpoints/Routes
 
-For better results I strongly suggest you use an API tester like postman or insomnia.
+For better results, I strongly suggest you use an API tester like Postman or insomnia.
 
 - Explore this endpoint to see all the current bookings available in the server
 
@@ -79,10 +79,10 @@ For better results I strongly suggest you use an API tester like postman or inso
   ```bash
   http://localhost:8000.bookings/cancel/:id
   ```
-  This endpoint takes a parameter in the request, the `:id` indicates that your are trying to cancel a booking by its id.
+  This endpoint takes a parameter in the request; the `:id` indicates that your are trying to cancel a booking by its id.
   Before hitting send for this one, replace `:id` with the id of the particular booking you're trying to cancel.
 
-The expected result is a json object that looks like it holds everything it did after hitting send on the post request, but if you observe closely , you'll notice that the success status shows false and the upcoming status shows false. Like so;
+The expected result is a json object that looks like it holds everything it did after hitting send on the post request, but if you observe closely, you'll notice that the success status shows false and the upcoming status shows false. Like so;
 
 ```bash
 "success": false,
@@ -91,7 +91,7 @@ The expected result is a json object that looks like it holds everything it did 
 
 ## Contributing
 
-Please, do feel free if you feel the need to add to this project to do so. I'd appreciate you input a lot. Just ensure you follow the following steps to ensure there's no ensuing chaos:
+Please, do feel free if you feel the need to add to this project to do so. I'd appreciate your input a lot. Just ensure you follow the following steps to ensure there's no ensuing chaos:
 
 1. Fork the repository
 2. Create a new branch
