@@ -9,7 +9,7 @@ const {
 const bookingsRouter = express.Router();
 
 bookingsRouter.get("/", httpGetAllBookings);
-bookingsRouter.post("/", httpAddNewBooking);
-bookingsRouter.delete("/:id", httpCancelBookingById);
+bookingsRouter.post("/add", httpAddNewBooking);
+bookingsRouter.delete("/cancel/:id", httpCancelBookingById);
 
 module.exports = { bookingsRouter };
