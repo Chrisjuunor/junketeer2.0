@@ -65,7 +65,7 @@ For better results, I strongly suggest you use an API tester like Postman or ins
 
   ```bash
    {
-  	"vehicle": "mini bus",
+  "vehicle": "mini bus",
    "tripDate": "April 20, 2025",
    "destination": "Lagos",
    "passenger": "Charlie"
@@ -86,7 +86,7 @@ The expected result is a json object that looks like it holds everything it did 
 
 ```bash
 "success": false,
-	"upcoming": false,
+"upcoming": false,
 ```
 
 ## Contributing
